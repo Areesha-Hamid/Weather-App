@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="bg-primary">
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">Weather App</a>
+                
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="city">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+
+      <!-- WEATHER CARDS -->
+      <div class="header">
+      <h1 class="text-center text-white fs-1 fw-bold">Weather of <span id="cityName"></span></h1>
+    </div>
+      
+    <div class="container">
+    <div class="card border-light mb-3 align-middle" style="max-width: 30rem; height: fit-content;">
+        <div class="card-header text-center fs-2">Temprature Info</div>
+        <div class="card-body">
+          <h5 class="card-title text-center fs-3 align-middle"><span id="temp2" class="color"></span><span >&#8451;</span></h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="text-center align-middle">Temprature is <span id="temp" class="color"></span> &#8451;</li>
+            <li class="text-center align-middle">Minimum Temprature is <span id="min_temp" class="color"></span> &#8451;</li>
+            <li class="text-center align-middle">Maximum Temprature is <span id="max_temp" class="color"></span> &#8451;</li>
+            <li class="text-center align-middle">Feels like <span id="feels_like" class="color"></span> &#8451;</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card border-light mb-3" style="max-width: 30rem;  height: fit-content;">
+        <div class="card-header text-center fs-2">Wind info</div>
+        <div class="card-body">
+          <h5 class="card-title text-center fs-3 align-middle"><span id="wind_degrees"></span class="color"> km/h</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="text-center align-middle">Cloud PCT is <span id="cloud_pct" class="color "></span></li>
+            <li class="text-center align-middle">Humidity is <span id="humidity" class="color "></span></li>
+            <li class="text-center align-middle">Wind speed is <span id="wind_speed" class="color "></span> km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </main>
+     
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Personal script  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
